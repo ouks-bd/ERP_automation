@@ -2,6 +2,7 @@ package testcase;
 
 import java.time.Duration;
 import java.util.List;
+import java.util.Set;
 
 import org.openqa.selenium.By;
 import org.openqa.selenium.JavascriptExecutor;
@@ -164,7 +165,7 @@ public class Testcaselocator extends DriverSetup {
 		
 		
 		//http://test.beacontech.xyz/Merchandising/StyleView/664
-		driver.get("http://test.beacontech.xyz/Merchandising/StyleView/664");
+		driver.get("http://test.beacontech.xyz/Merchandising/StyleView/729");
 		Thread.sleep(2000);
 		
 		//BOM_Fabric ItemFK_2
@@ -204,39 +205,58 @@ public class Testcaselocator extends DriverSetup {
         
         driver.findElement(By.id("btnsave")).click();
         
+        //driver.get("href=/Merchandising/OrderView/608");
+        //driver.get("http://test.beacontech.xyz/YarnCalculation/729");
         
-       
-        WebElement sewing = driver.findElement(By.id("ItemFK_6"));
-		Select lab  =new Select(sewing);
-		lab.selectByValue("14");
-		Thread.sleep(2000);
+        
+        //driver.navigate().back();
+        driver.get("http://test.beacontech.xyz/Merchandising/OrderView/608");
+        Thread.sleep(9000);
+        
+//      driver.navigate().to("http://test.beacontech.xyz/YarnCalculation/729");
+//      Thread.sleep(9000);
+//      driver.get("http://test.beacontech.xyz/YarnCalculation/729");
+//		Thread.sleep(6000);
+//		
+	
+	}
+}
 		
-//		WebElement sewing_colour = driver.findElement(By.name("//select[@name='vmBOM.Common_ColorFK'])[2]"));
-//		Select sewing_value  =new Select(sewing_colour);
-//		sewing_value .selectByValue("1");
+        
+//       
+//        WebElement sewing = driver.findElement(By.id("ItemFK_6"));
+//		Select lab  =new Select(sewing);
+//		lab.selectByValue("14");
+//		Thread.sleep(2000);
+//		
+//		//href="/Merchandising"
+//		
+////		WebElement sewing_colour = driver.findElement(By.name("//select[@name='vmBOM.Common_ColorFK'])[2]"));
+////		Select sewing_value  =new Select(sewing_colour);
+////		sewing_value .selectByValue("1");
+////		Thread.sleep(5000);
+//		
+//		
+//		WebElement Fabric_colour_sewing = driver.findElement(By.id("//select[@name='Common_ColorFK'])[2]"));
+//		Select BOM_color_sewing  =new Select(Fabric_colour_sewing);
+//		BOM_color_sewing.selectByValue("1");
 //		Thread.sleep(5000);
-		
-		
-		WebElement Fabric_colour_sewing = driver.findElement(By.id("//select[@name='Common_ColorFK'])[2]"));
-		Select BOM_color_sewing  =new Select(Fabric_colour_sewing);
-		BOM_color_sewing.selectByValue("1");
-		Thread.sleep(5000);
-		
-		WebElement consumpti=driver.findElement(By.name("vmBOM.Consumption"));
-        consumpti.sendKeys("500");
-        Thread.sleep(5000);
-        
-        WebElement required_quanti=driver.findElement(By.name("vmBOM.ConRequiredQty"));
-        required_quanti.sendKeys("5");
-        
-        driver.findElement(By.xpath("(//input[@name='vmBOM.Tolerance'])[2]")).sendKeys("19");
-     
-        WebElement UnitPr=driver.findElement(By.name("vmBOM.UnitPrice"));
-        UnitPr.sendKeys("10");
-        Thread.sleep(2000);
-        
-        driver.findElement(By.id("btnsave")).click();
-        Thread.sleep(4000);
+//		
+//		WebElement consumpti=driver.findElement(By.name("vmBOM.Consumption"));
+//        consumpti.sendKeys("500");
+//        Thread.sleep(5000);
+//        
+//        WebElement required_quanti=driver.findElement(By.name("vmBOM.ConRequiredQty"));
+//        required_quanti.sendKeys("5");
+//        
+//        driver.findElement(By.xpath("(//input[@name='vmBOM.Tolerance'])[2]")).sendKeys("19");
+//     
+//        WebElement UnitPr=driver.findElement(By.name("vmBOM.UnitPrice"));
+//        UnitPr.sendKeys("10");
+//        Thread.sleep(2000);
+//        
+//        driver.findElement(By.id("btnsave")).click();
+//        Thread.sleep(4000);
         
         
         
@@ -285,7 +305,7 @@ public class Testcaselocator extends DriverSetup {
 		
 	
 
-	}
+	
 
-}
+
  
