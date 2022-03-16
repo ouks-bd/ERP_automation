@@ -24,6 +24,7 @@ public class Testcaselocator extends DriverSetup {
 		driver.manage().window().maximize();
 		
 		Thread.sleep(3000);
+		Thread.sleep(3000);
 		
 		//log_IN
 		driver.findElement(By.id("UserName")).sendKeys("shoeb");
