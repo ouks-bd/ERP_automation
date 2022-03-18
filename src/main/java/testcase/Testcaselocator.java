@@ -212,7 +212,19 @@ public class Testcaselocator extends DriverSetup {
         
         //driver.navigate().back();
         driver.get("http://test.beacontech.xyz/Merchandising/OrderView/608");
+        
+  
+        driver.get("http://test.beacontech.xyz/Merchandising/YarnCalculation/735");
         Thread.sleep(9000);
+//        WebElement ItemFK_2 = driver.findElement(By.id("ItemFK_2"));
+//		Select BOM_Fabric  =new Select(ItemFK_2);
+//		BOM_Fabric.selectByValue("6904");
+//        Thread.sleep(9000);
+        
+        
+        
+
+        
         
 //      driver.navigate().to("http://test.beacontech.xyz/YarnCalculation/729");
 //      Thread.sleep(9000);
