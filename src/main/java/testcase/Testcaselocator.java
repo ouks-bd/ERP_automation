@@ -216,10 +216,11 @@ public class Testcaselocator extends DriverSetup {
   
         driver.get("http://test.beacontech.xyz/Merchandising/YarnCalculation/735");
         Thread.sleep(9000);
-//        WebElement ItemFK_2 = driver.findElement(By.id("ItemFK_2"));
-//		Select BOM_Fabric  =new Select(ItemFK_2);
-//		BOM_Fabric.selectByValue("6904");
-//        Thread.sleep(9000);
+       
+        WebElement Bof_Item = driver.findElement(By.id("ddlCommonRaw_FabricItemFK"));
+		Select BOF_Fabric  =new Select(Bof_Item );
+		BOF_Fabric.selectByValue("6904");
+        Thread.sleep(9000);
         
         
         
