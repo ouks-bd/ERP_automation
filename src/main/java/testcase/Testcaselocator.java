@@ -214,12 +214,25 @@ public class Testcaselocator extends DriverSetup {
         driver.get("http://test.beacontech.xyz/Merchandising/OrderView/608");
         
   
+        
+        
+        //BOF
         driver.get("http://test.beacontech.xyz/Merchandising/YarnCalculation/735");
         Thread.sleep(9000);
        
         WebElement Bof_Item = driver.findElement(By.id("ddlCommonRaw_FabricItemFK"));
 		Select BOF_Fabric  =new Select(Bof_Item );
 		BOF_Fabric.selectByValue("6904");
+		
+	
+		WebElement Bof_color = driver.findElement(By.id("txtCommonColorFK"));
+		Select BOF_Fabric_color  =new Select(Bof_color);
+		BOF_Fabric_color.selectByValue("6904");
+		
+		driver.findElement(By.id("txtConsumption")).sendKeys("0.62");
+		driver.findElement(By.id("txtProcessLoss")).sendKeys("0");
+		driver.findElement(By.id("txtProcessLossAOP")).sendKeys("0");
+		driver.findElement(By.id("txtCombo")).sendKeys("7");
         Thread.sleep(9000);
         
         
