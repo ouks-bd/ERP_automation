@@ -225,8 +225,8 @@ public class Testcaselocator extends DriverSetup {
 		BOF_Fabric.selectByValue("6904");
 		
 	
-		WebElement Bof_color = driver.findElement(By.id("txtCommonColorFK"));
-		Select BOF_Fabric_color  =new Select(Bof_color);
+		WebElement rawitem = driver.findElement(By.id("txtCommonColorFK"));
+		Select rawitem_list  =new Select(Bof_color);
 		BOF_Fabric_color.selectByValue("6904");
 		
 		driver.findElement(By.id("txtConsumption")).sendKeys("0.62");
@@ -235,6 +235,9 @@ public class Testcaselocator extends DriverSetup {
 		driver.findElement(By.id("txtCombo")).sendKeys("7");
         Thread.sleep(9000);
         
+        WebElement rawitem_bof   = driver.findElement(By.id("RawSubCategoryFK"));
+		Select rawitem_list_bof  =new Select(rawitem_bof);
+		rawitem_list_bof.selectByValue("6904");
         
         
 
