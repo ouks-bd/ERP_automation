@@ -240,11 +240,24 @@ public class Testcaselocator extends DriverSetup {
 		rawitem_list_bof.selectByValue("2039");
         
 	
-		 WebElement yarncount= driver.findElement(By.id("Raw_ItemFK"));
+		WebElement yarncount= driver.findElement(By.id("Raw_ItemFK"));
 		Select yarncountitem =new Select(yarncount );
 		yarncountitem.selectByValue("5252");
         
+	
+		driver.findElement(By.id("txtPrice")).sendKeys("0.98");
+		
+		
+		WebElement currency= driver.findElement(By.id("ddlCommonCurrencyFK"));
+		Select currency_value =new Select(currency);
+		currency_value.selectByValue("5252");
+		
+		
         
+		driver.findElement(By.id("txtGSM")).sendKeys("180");
+		
+		
+		
 //      driver.navigate().to("http://test.beacontech.xyz/YarnCalculation/729");
 //      Thread.sleep(9000);
 //      driver.get("http://test.beacontech.xyz/YarnCalculation/729");
