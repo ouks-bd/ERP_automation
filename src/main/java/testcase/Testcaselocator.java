@@ -225,8 +225,8 @@ public class Testcaselocator extends DriverSetup {
 		BOF_Fabric.selectByValue("6904");
 		
 	
-		WebElement rawitem = driver.findElement(By.id("txtCommonColorFK"));
-		Select rawitem_list  =new Select(Bof_color);
+		WebElement Bof_color = driver.findElement(By.id("txtCommonColorFK"));
+		Select BOF_Fabric_color  =new Select(Bof_color);
 		BOF_Fabric_color.selectByValue("6904");
 		
 		driver.findElement(By.id("txtConsumption")).sendKeys("0.62");
@@ -237,10 +237,12 @@ public class Testcaselocator extends DriverSetup {
         
         WebElement rawitem_bof   = driver.findElement(By.id("RawSubCategoryFK"));
 		Select rawitem_list_bof  =new Select(rawitem_bof);
-		rawitem_list_bof.selectByValue("6904");
+		rawitem_list_bof.selectByValue("2039");
         
-        
-
+	
+		 WebElement yarncount= driver.findElement(By.id("Raw_ItemFK"));
+		Select yarncountitem =new Select(yarncount );
+		yarncountitem.selectByValue("5252");
         
         
 //      driver.navigate().to("http://test.beacontech.xyz/YarnCalculation/729");
