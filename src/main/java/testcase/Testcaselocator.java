@@ -229,9 +229,16 @@ public class Testcaselocator extends DriverSetup {
 		Select BOF_Fabric_color  =new Select(Bof_color);
 		BOF_Fabric_color.selectByValue("6904");
 		
+		driver.findElement(By.id("txtConsumption")).clear();
 		driver.findElement(By.id("txtConsumption")).sendKeys("0.62");
+		
+		driver.findElement(By.id("txtProcessLoss")).clear();
 		driver.findElement(By.id("txtProcessLoss")).sendKeys("0");
+		
+		driver.findElement(By.id("txtProcessLossAOP")).clear();
 		driver.findElement(By.id("txtProcessLossAOP")).sendKeys("0");
+		
+		driver.findElement(By.id("txtCombo")).clear();
 		driver.findElement(By.id("txtCombo")).sendKeys("7");
         Thread.sleep(9000);
         
@@ -244,7 +251,7 @@ public class Testcaselocator extends DriverSetup {
 		Select yarncountitem =new Select(yarncount );
 		yarncountitem.selectByValue("5252");
         
-	
+		driver.findElement(By.id("txtPrice")).clear();
 		driver.findElement(By.id("txtPrice")).sendKeys("0.98");
 		
 		
@@ -252,11 +259,8 @@ public class Testcaselocator extends DriverSetup {
 		Select currency_value =new Select(currency);
 		currency_value.selectByValue("5252");
 		
-		
-        
 		driver.findElement(By.id("txtGSM")).sendKeys("180");
-		
-		
+		driver.findElement(By.id("txtLycra")).sendKeys("2");
 		
 //      driver.navigate().to("http://test.beacontech.xyz/YarnCalculation/729");
 //      Thread.sleep(9000);
