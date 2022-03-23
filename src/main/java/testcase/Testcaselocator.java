@@ -259,13 +259,21 @@ public class Testcaselocator extends DriverSetup {
 		Select currency_value =new Select(currency);
 		currency_value.selectByValue("5252");
 		
+		driver.findElement(By.id("txtGSM")).clear();
 		driver.findElement(By.id("txtGSM")).sendKeys("180");
+		
+		driver.findElement(By.id("txtLycra")).clear();
 		driver.findElement(By.id("txtLycra")).sendKeys("2");
 		
 		
 		WebElement yarntype= driver.findElement(By.id("YarnTypeFk"));
 		Select type =new Select(yarntype);
 		type.selectByValue("3");
+		
+		
+		driver.findElement(By.id("txtFinishDIA")).clear();
+		driver.findElement(By.id("txtFinishDIA")).sendKeys("20");
+		
 		
 //      driver.navigate().to("http://test.beacontech.xyz/YarnCalculation/729");
 //      Thread.sleep(9000);
