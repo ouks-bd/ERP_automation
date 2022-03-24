@@ -274,12 +274,13 @@ public class Testcaselocator extends DriverSetup {
 		driver.findElement(By.id("txtFinishDIA")).clear();
 		driver.findElement(By.id("txtFinishDIA")).sendKeys("20");
 		
+		driver.findElement(By.id("btnsave")).click();
+		
 		
 //      driver.navigate().to("http://test.beacontech.xyz/YarnCalculation/729");
 //      Thread.sleep(9000);
 //      driver.get("http://test.beacontech.xyz/YarnCalculation/729");
-//		Thread.sleep(6000);
-//		
+//		Thread.sleep(6000);	
 	
 	}
 }
