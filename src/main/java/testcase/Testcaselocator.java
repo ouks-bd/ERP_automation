@@ -47,8 +47,8 @@ public class Testcaselocator extends DriverSetup {
 		select.selectByValue("3");
 
 
-		driver.findElement(By.id("txt4")).sendKeys("PO001");
-		driver.findElement(By.id("txt2")).sendKeys("2022-02-14");
+		driver.findElement(By.id("txt4")).sendKeys("PO24032022");
+		driver.findElement(By.id("txt2")).sendKeys("2022-03-24");
 		Thread.sleep(2000); 
 		driver.findElement(By.id("txt5")).sendKeys("2022");
 		driver.findElement(By.id("Commission")).sendKeys("5");
@@ -58,10 +58,10 @@ public class Testcaselocator extends DriverSetup {
 		// located element with contains()
 		//driver.findElement(By.xpath("//*[contains(text(),'ADD')]"));
 		
-		WebElement elementadd = driver.findElement(By.id("btnsave"));
-		elementadd.submit();
-		
-//		driver.findElement(By.id("btnsave")).click(); 
+//		WebElement elementadd = driver.findElement(By.id("btnsave"));
+//		elementadd.submit();
+//		
+		driver.findElement(By.id("btnsave")).click(); 
 //		Thread.sleep(2000);
 		//driver.findElement(By.cssSelector("input[type='button']")).click()
 		//driver.findElement(By.className("button[@class='col-lg-12']"));
@@ -276,7 +276,14 @@ public class Testcaselocator extends DriverSetup {
 		
 		driver.findElement(By.id("btnsave")).click();
 		
+		driver.findElement(By.id("select_all")).click();
 		
+		 
+		
+		 driver.findElement(By.xpath("//*[contains(text(), 'Approve All Yarn')]"));
+		 
+		 driver.findElement(By.xpath("//*[contains(text(), 'Initiate BOF')]"));
+		 
 //      driver.navigate().to("http://test.beacontech.xyz/YarnCalculation/729");
 //      Thread.sleep(9000);
 //      driver.get("http://test.beacontech.xyz/YarnCalculation/729");
