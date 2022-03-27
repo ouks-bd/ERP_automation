@@ -227,7 +227,7 @@ public class Testcaselocator extends DriverSetup {
 	
 		WebElement Bof_color = driver.findElement(By.id("txtCommonColorFK"));
 		Select BOF_Fabric_color  =new Select(Bof_color);
-		BOF_Fabric_color.selectByValue("6904");
+		BOF_Fabric_color.selectByValue("3");
 		
 		driver.findElement(By.id("txtConsumption")).clear();
 		driver.findElement(By.id("txtConsumption")).sendKeys("0.62");
@@ -246,7 +246,7 @@ public class Testcaselocator extends DriverSetup {
 		Select rawitem_list_bof  =new Select(rawitem_bof);
 		rawitem_list_bof.selectByValue("2039");
         
-	
+		//problem_in_count
 		WebElement yarncount= driver.findElement(By.id("Raw_ItemFK"));
 		Select yarncountitem =new Select(yarncount );
 		yarncountitem.selectByValue("5252");
