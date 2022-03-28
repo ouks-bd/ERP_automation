@@ -8,6 +8,7 @@ import org.openqa.selenium.By;
 import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.ui.Select;
+import org.testng.Assert;
 import org.testng.annotations.Test;
 
 import base.DriverSetup;
@@ -22,6 +23,12 @@ public class Testcaselocator extends DriverSetup {
 		driver.get(baseUrl);
 		driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(5));
 		driver.manage().window().maximize();
+		
+		//get_title
+		String actualTitleOfTheSite=driver.getTitle();
+		//String titleOfThePage=driver.getTitle();
+		System.out.println("The Title of the site is: "+ actualTitleOfTheSite);
+		//Assert.assertEquals("My Stores", actualTitleOfTheSite);
 		
 		Thread.sleep(3000);
 		
@@ -169,12 +176,23 @@ public class Testcaselocator extends DriverSetup {
 		driver.get("http://test.beacontech.xyz/Merchandising/StyleView/729");
 		Thread.sleep(2000);
 		
+		//need_to_add_code_add_old_reference
+//		driver.switchTo().frame(0);
+//		// Operate Elements
+//		//driver.findElement(By.xpath("(//span[contains(@class,'checkboxradio')])[5]")).click();
+//		driver.findElement(By.xpath("//body/div[1]/fieldset[1]/label[3]")).click();
+		
+		
+		
+		
 		//BOM_Fabric ItemFK_2
 		WebElement ItemFK_2 = driver.findElement(By.id("ItemFK_2"));
 		Select BOM_Fabric  =new Select(ItemFK_2);
 		BOM_Fabric.selectByValue("6904");
 		BOM_Fabric.selectByValue("6905");
 		Thread.sleep(2000);
+		
+		//selectByIndex(1);
 		
 		//BOM_Fabric_color_Common_ColorFK
 		WebElement Fabric_colour = driver.findElement(By.id("Common_ColorFK"));
@@ -248,7 +266,7 @@ public class Testcaselocator extends DriverSetup {
         
 		//problem_in_count
 		WebElement yarncount= driver.findElement(By.id("Raw_ItemFK"));
-		Select yarncountitem =new Select(yarncount );
+		Select yarncountitem =new Select(yarncount);
 		yarncountitem.selectByValue("5252");
         
 		driver.findElement(By.id("txtPrice")).clear();
