@@ -265,7 +265,9 @@ public class Testcaselocator extends DriverSetup {
 		rawitem_list_bof.selectByValue("2039");
         
 		//problem_in_count
-		WebElement yarncount= driver.findElement(By.id("Raw_ItemFK"));
+		
+		WebElement yarncount= driver.findElement(By.name("Raw_ItemFK"));
+		//WebElement yarncount= driver.findElement(By.id("Raw_ItemFK"));
 		Select yarncountitem =new Select(yarncount);
 		yarncountitem.selectByValue("5252");
         
@@ -275,7 +277,7 @@ public class Testcaselocator extends DriverSetup {
 		
 		WebElement currency= driver.findElement(By.id("ddlCommonCurrencyFK"));
 		Select currency_value =new Select(currency);
-		currency_value.selectByValue("5252");
+		currency_value.selectByValue("1");
 		
 		driver.findElement(By.id("txtGSM")).clear();
 		driver.findElement(By.id("txtGSM")).sendKeys("180");
@@ -291,11 +293,17 @@ public class Testcaselocator extends DriverSetup {
 		
 		driver.findElement(By.id("txtFinishDIA")).clear();
 		driver.findElement(By.id("txtFinishDIA")).sendKeys("20");
+		Thread.sleep(5000);
+//		driver.findElement(By.id("btnsave")).click();
+		//driver.findElement(By.className("btn btn-block btn-flat btn-primary"));
 		
 		driver.findElement(By.id("btnsave")).click();
 		
+		Thread.sleep(5000);
+		
 		driver.findElement(By.id("select_all")).click();
 		
+		Thread.sleep(5000);
 		 
 		
 		 driver.findElement(By.xpath("//*[contains(text(), 'Approve All Yarn')]"));
