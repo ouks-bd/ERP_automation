@@ -296,9 +296,13 @@ public class Testcaselocator extends DriverSetup {
 		Thread.sleep(5000);
 //		driver.findElement(By.id("btnsave")).click();
 		//driver.findElement(By.className("btn btn-block btn-flat btn-primary"));
+		driver.findElement(By.xpath("//body/div[@class='wrapper']/div[@class='content-wrapper']/section[@class='content']/div[1]/div[1]")).click();
 		
-		driver.findElement(By.id("btnsave")).click();
+		//body/div[@class='wrapper']/div[@class='content-wrapper']/section[@class='content']/div[1]/div[1]
 		
+				
+		//driver.findElement(By.id("btnsave")).click();
+		//body/div[@class='wrapper']/div[@class='content-wrapper']/section[@class='content']/div[1]/div[1]
 		Thread.sleep(5000);
 		
 		driver.findElement(By.id("select_all")).click();
