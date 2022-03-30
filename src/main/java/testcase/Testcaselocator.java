@@ -231,8 +231,7 @@ public class Testcaselocator extends DriverSetup {
         //driver.navigate().back();
         driver.get("http://test.beacontech.xyz/Merchandising/OrderView/608");
         
-  
-        
+      
         
         //BOF
         driver.get("http://test.beacontech.xyz/Merchandising/YarnCalculation/735");
@@ -309,11 +308,22 @@ public class Testcaselocator extends DriverSetup {
 		
 		Thread.sleep(5000);
 		 
+		//driver.findElement(By.xpath("//button[contains(@class,'submit')])")).click();
+		 driver.findElement(By.xpath("//*[contains(text(), 'Approve All Yarn')]")).click();
+		 
+		 driver.findElement(By.xpath("//*[contains(text(), 'Initiate BOF')]")).click();
+		 
+		 driver.findElement(By.id("VMBOFViewList_1__Price")).sendKeys("0.2");
+		 driver.findElement(By.id("VMBOFViewList_2__Price")).sendKeys("0.3");
+		 driver.findElement(By.id("VMBOFViewList_3__Price")).sendKeys("0.4");
+		 driver.findElement(By.id("VMBOFViewList_4__Price")).sendKeys("0.4");
+		 
+		 //driver.findElement(By.id("btnProcessBOFsave")).click();
+		 Thread.sleep(5000);
+		 
+		driver.get("http://test.beacontech.xyz/procurement/procurementstylepurchaserequisitionslave");
 		
-		 driver.findElement(By.xpath("//*[contains(text(), 'Approve All Yarn')]"));
-		 
-		 driver.findElement(By.xpath("//*[contains(text(), 'Initiate BOF')]"));
-		 
+			 
 //      driver.navigate().to("http://test.beacontech.xyz/YarnCalculation/729");
 //      Thread.sleep(9000);
 //      driver.get("http://test.beacontech.xyz/YarnCalculation/729");
