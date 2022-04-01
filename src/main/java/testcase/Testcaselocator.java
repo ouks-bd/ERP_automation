@@ -43,7 +43,9 @@ public class Testcaselocator extends DriverSetup {
 		driver.findElement(By.className("col-xs-4")).click();
 		//Thread.sleep(2000); 
 		
+		//driver.navigate().back();
 		
+
 		
 		driver.get("http://test.beacontech.xyz/merchandising/order");
 		driver.findElement(By.id("iconName")).click();
@@ -316,14 +318,23 @@ public class Testcaselocator extends DriverSetup {
 		 driver.findElement(By.id("VMBOFViewList_1__Price")).sendKeys("0.2");
 		 driver.findElement(By.id("VMBOFViewList_2__Price")).sendKeys("0.3");
 		 driver.findElement(By.id("VMBOFViewList_3__Price")).sendKeys("0.4");
-		 driver.findElement(By.id("VMBOFViewList_4__Price")).sendKeys("0.4");
+		 driver.findElement(By.id("VMBOFViewList_4__Price")).sendKeys("0.5");
+		 driver.navigate().back();
 		 
+		 //not_saving_click_button_due_to_this_process_end
 		 //driver.findElement(By.id("btnProcessBOFsave")).click();
 		 Thread.sleep(5000);
 		 
+		 
 		driver.get("http://test.beacontech.xyz/procurement/procurementstylepurchaserequisitionslave");
-		
+		WebElement origin = driver.findElement(By.id("ddlProcurementOriginTypeEnumFK"));
+		Select origin_sub  =new Select(origin);
+		origin_sub.selectByValue("3");
 			 
+		WebElement origin = driver.findElement(By.id("ddlProcurementOriginTypeEnumFK"));
+		Select origin_sub  =new Select(origin);
+		origin_sub.selectByValue("3");
+		
 //      driver.navigate().to("http://test.beacontech.xyz/YarnCalculation/729");
 //      Thread.sleep(9000);
 //      driver.get("http://test.beacontech.xyz/YarnCalculation/729");
