@@ -323,7 +323,7 @@ public class Testcaselocator extends DriverSetup {
 		 
 		 //not_saving_click_button_due_to_this_process_end
 		 //driver.findElement(By.id("btnProcessBOFsave")).click();
-		 Thread.sleep(5000);
+		
 		 
 		 
 		driver.get("http://test.beacontech.xyz/procurement/procurementstylepurchaserequisitionslave");
@@ -331,9 +331,15 @@ public class Testcaselocator extends DriverSetup {
 		Select origin_sub  =new Select(origin);
 		origin_sub.selectByValue("3");
 			 
-		WebElement origin = driver.findElement(By.id("ddlProcurementOriginTypeEnumFK"));
-		Select origin_sub  =new Select(origin);
-		origin_sub.selectByValue("3");
+		WebElement requisition = driver.findElement(By.id("ddlProcurementOriginTypeEnumFK"));
+		Select requisition_type_pr  =new Select(requisition);
+		requisition_type_pr.selectByValue("1");
+		
+		WebElement styleLoadPr = driver.findElement(By.id("ddlMerchandisingStyleID"));
+		Select styleLoadP  =new Select(styleLoadPr);
+		styleLoadP.selectByValue("1");
+		
+		 Thread.sleep(5000);
 		
 //      driver.navigate().to("http://test.beacontech.xyz/YarnCalculation/729");
 //      Thread.sleep(9000);
