@@ -71,12 +71,10 @@ public class Testcaselocator extends DriverSetup {
 //		elementadd.submit();
 //		
 		driver.findElement(By.id("btnsave")).click(); 
-//		Thread.sleep(2000);
 		//driver.findElement(By.cssSelector("input[type='button']")).click()
 		//driver.findElement(By.className("button[@class='col-lg-12']"));
 		//driver.findElement(By.id("//button[@id='btnsave']")).click(); 
 		//driver.findElement(By.xpath("//div[@class='col-lg-12']//button[@id='btnsave']")).click();
-//		Thread.sleep(2000);
 //		JavascriptExecutor js = (JavascriptExecutor) driver;
 //		js.executeScript("document.querySelector('...').click();");
 		
@@ -88,7 +86,7 @@ public class Testcaselocator extends DriverSetup {
 		driver.findElement(By.xpath("(//a[starts-with(@href,'/Merchandising/OrderView/')])[1]")).click();
 		
 		//driver.get ("http://test.beacontech.xyz/Merchandising/OrderView/594");
-		//Thread.sleep(2000); 
+		
 		
 		driver.findElement(By.id("iconName")).click();
 		
@@ -124,9 +122,6 @@ public class Testcaselocator extends DriverSetup {
 		driver.findElement(By.xpath("//input[@id='vmStyle_Fabrication']")).sendKeys("100% cotton");
 		Thread.sleep(2000);
 		
-//		driver.findElement(By.xpath("//input[@id='vmStyle_SizeIDs']")).click();
-//		
-//		Thread.sleep(2000);
 		
 		WebElement sizes = driver.findElement(By.id("vmStyle_SizeIDs"));
 		Select size  =new Select(sizes);
@@ -226,8 +221,7 @@ public class Testcaselocator extends DriverSetup {
         
         driver.findElement(By.id("btnsave")).click();
         
-        //driver.get("href=/Merchandising/OrderView/608");
-        //driver.get("http://test.beacontech.xyz/YarnCalculation/729");
+    
         
         
         //driver.navigate().back();
@@ -298,13 +292,7 @@ public class Testcaselocator extends DriverSetup {
 //		driver.findElement(By.id("btnsave")).click();
 		//driver.findElement(By.className("btn btn-block btn-flat btn-primary"));
 		driver.findElement(By.xpath("//body/div[@class='wrapper']/div[@class='content-wrapper']/section[@class='content']/div[1]/div[1]")).click();
-		
-		//body/div[@class='wrapper']/div[@class='content-wrapper']/section[@class='content']/div[1]/div[1]
-		
-				
-		//driver.findElement(By.id("btnsave")).click();
-		//body/div[@class='wrapper']/div[@class='content-wrapper']/section[@class='content']/div[1]/div[1]
-		Thread.sleep(5000);
+	
 		
 		driver.findElement(By.id("select_all")).click();
 		
