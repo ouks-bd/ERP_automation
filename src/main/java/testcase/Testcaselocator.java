@@ -34,7 +34,7 @@ public class Testcaselocator extends DriverSetup {
 		
 		
 		//log_IN
-		driver.findElement(By.id("UserName")).sendKeys("shoeb");
+		driver.findElement(By.id("UserName")).sendKeys("@@@2");
 		//Thread.sleep(2000);
 		
 		driver.findElement(By.id("Password")).sendKeys("@@@@");
